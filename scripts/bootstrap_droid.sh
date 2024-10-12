@@ -3,8 +3,8 @@
 kalib_dir=$1
 cd ${kalib_dir}/third_party/droid || exit
 
-source activate base
-conda activate kalib
+# source activate base
+conda activate py3.10-kalib
 
 pip install -e .
 
@@ -23,3 +23,4 @@ pip install "numpy<2.0"
 pip install "torchvision"
 
 cd ${kalib_dir}/ || exit
+pippip       

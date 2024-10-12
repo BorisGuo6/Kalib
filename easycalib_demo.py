@@ -276,7 +276,6 @@ class Kalib:
 			with open(json_path, "r") as j:
 				json_obj = json.loads(j.read())
 				json_objs.append(json_obj)
-
 		return img_insts, json_objs, found_image_paths, found_json_paths
 	# endregion
 
@@ -715,6 +714,7 @@ class Kalib:
 
 if __name__ == "__main__":
 	args = parse_easycalib_default_args(cli_input=True)
+	torch.cuda.empty_cache()
 	kalib = Kalib(args)
 	calibrated = kalib.preprocess(SAVE_TAG)
 	if not calibrated:

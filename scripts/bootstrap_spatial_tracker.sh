@@ -2,8 +2,8 @@
 
 kalib_dir=$1
 
-source activate base
-conda activate kalib
+# source activate base
+conda activate py3.10-kalib
 
 # ! Installing dependencies.
 cd "${kalib_dir}"/third_party/spatial_tracker/ || exit
@@ -20,7 +20,7 @@ gdown --id 18YlG_rgrHcJ7lIYQWfRz_K669z6FdmUX
 
 cd "${kalib_dir}"/third_party/spatial_tracker || exit
 
-mkdir -p ./models/monoD/zoeDepth/ckpts
+mkdir -p ./models/monoD/zoeDepth/ckpts/
 
 # WGET_ARG="--spider"
 WGET_ARG=""

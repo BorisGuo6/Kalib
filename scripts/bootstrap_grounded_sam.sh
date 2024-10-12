@@ -2,8 +2,8 @@
 
 kalib_dir=$1
 
-source activate base
-conda activate kalib
+# source activate base
+conda activate py3.10-kalib
 
 export AM_I_DOCKER=False
 export BUILD_WITH_CUDA=True

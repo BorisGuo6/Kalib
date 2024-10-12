@@ -2,8 +2,8 @@
 
 kalib_dir=$1
 
-source activate base
-conda activate kalib
+# source activate base
+conda activate py3.10-kalib
 
 sam_ckpts_dir=${kalib_dir}"/pretrained_checkpoints"
 mkdir -p "$sam_ckpts_dir"

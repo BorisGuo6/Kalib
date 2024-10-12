@@ -3,8 +3,8 @@
 # Maintain here for API consistency.
 kalib_dir=$1
 
-source activate base
-conda activate kalib
+# source activate base
+conda activate py3.10-kalib
 
 # https://github.com/robotflow-initiative/pyrfuniverse
 mkdir -p /tmp
@@ -23,4 +23,4 @@ pyrfuniverse download -s /tmp/rfuniverse_release
 
 # test
 pip install pyrfuniverse-test
-pyrfuniverse-test test_pick_and_place
+# pyrfuniverse-test test_pick_and_place

@@ -1,0 +1,18 @@
+python easycalib_demo.py \
+  --root_dir /home/shaol/gjx/Kalib/dataset/test_sample_droid_data/ \
+  --use_segm_mask true \
+  --caliberate_method pnp \
+  --pnp_refinement true \
+  --use_pnp_ransac false \
+  --use_grounded_sam \
+  --has_gt \
+  --win_len 1 \
+  --verbose \
+  --render_mask \
+  --grounded_sam_repo_path /home/shaol/gjx/Kalib/third_party/grounded_segment_anything/ \
+  --spatial_tracker_repo_path /home/shaol/gjx/Kalib/third_party/spatial_tracker/ \
+  --cut_off 300 \
+  --renderer_device_id 0 \
+  --tracking_device_id 0 \
+  --mask_inference_device_id 0 \
+  --keypoint_ids 0
